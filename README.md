@@ -10,11 +10,11 @@ In order to cool a dwelling with night air one needs to pump the cool air at nig
 
 The system uses two temperature sensors, a wifi controlled power switch, a fan, and python code running on most any computer that supports general purpose input and output (GPIO) devices.  An old laptop with a USB GPIO card or a Raspberry PI computer from the last decade both work well.  The python code spec:
 
-  1. check indoor temperature > than some lower limit
-     (we do not want to freeze things)
-  2. check outdoor temperature in within a range
-  3. check indoor temperature > outdoor temperature
-  4. when 1 2 and 3 conditions are met turn on the window fan
+    1. check indoor temperature > than some lower limit
+       (we do not want to freeze things)
+    2. check outdoor temperature in within a range
+    3. check indoor temperature > outdoor temperature
+    4. when 1 2 and 3 conditions are met turn on the window fan
 
 The DS18B20 water resistent/waterproof temperature sensors are about $2 US each.  Variants of the SONOFF S31 WiFi controled power switches are in the $10 US range.  Window fans and computers are market rate as we all know.  The python code is free.
 
@@ -24,26 +24,27 @@ The DS18B20 temperature sensors are connected to 3.3 volt power, ground, and GPI
 
 For Raspberry PI's one has to add the one wire support.  Do this by adding:
 
-  [all]
-  dtoverlay=w1-gpio
+     [all]
+     dtoverlay=w1-gpio
 
 to the bottom of /boot/firmware/config.txt and reboot.  After rebooting one can run the following and then check for 28* devices in /sys/bus/w1/devices.  The 28* devices are the temperature sensors:
 
-  sudo modprobe w1-gpio
-  sudo modprobe w1-therm
+     sudo modprobe w1-gpio
+     sudo modprobe w1-therm
 
 This python code loads the following libraries:
 
-  import tkinter as tk
-  from tkinter import ttk
-  import threading
-  import os
-  import time
-  import glob
-  import requests
+    import tkinter as tk
+    from tkinter import ttk
+    import threading
+    import os
+    import time
+    import glob
+    import requests
 
 Run using:
-  python3 cold-air-pump.py
 
-Doug Blewett
-doug.blewett@gmail.com
+    python3 cold-air-pump.py
+
+    Doug Blewett
+    doug.blewett@gmail.com
