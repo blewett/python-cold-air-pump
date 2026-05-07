@@ -43,7 +43,7 @@ This python code loads the following libraries:
   import requests
 
 Run using:
-  python cold-air-pump.py
+  python3 cold-air-pump.py
 
 Doug Blewett
 doug.blewett@gmail.com
