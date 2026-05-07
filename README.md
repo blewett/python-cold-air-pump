@@ -6,7 +6,7 @@ The python and sensor based system pumps cold outdoor air indoors for low energy
 
 I live in northern California where the weather is mild year around.  In the summer time, we have some days where the temperature reaches into the 80's and sometimes low 90's F.  It most always cools down to the high 50's or low 60's at night.  If one cools their dwelling at night, that is often enough to avoid having to resort of compressor based air conditioning the next day.  Cooling at night also is good for sleeping - my opinion - as is all of the rest.
 
-In order to cool a dwelling with night air one needs to pump the cool air at night into the dwelling - hence our somewhat silly notion of a "cool pump".  This is a fan that blows cool outdoor air indoors.  The device and code look for a range of outdoor temperatures and pump air into the dwelling when those temperatures are lower than the indoor temperature.
+In order to cool a dwelling with night air one needs to pump the cool air at night into the dwelling - hence our somewhat silly notion of a "cold pump".  This is a fan that blows cool outdoor air indoors.  The device and code look for a range of outdoor temperatures and pump air into the dwelling when those temperatures are lower than the indoor temperature.
 
 The system uses two temperature sensors, a wifi controlled power switch, a fan, and python code running on most any computer that supports general purpose input and output (GPIO) devices.  An old laptop with a USB GPIO card or a Raspberry PI computer from the last decade both work well.  The python code spec:
 
