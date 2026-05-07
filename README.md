@@ -1,7 +1,7 @@
 # python-cold-air-pump
 The python and sensor based system pumps cold outdoor air indoors for low energy cooling.
 
-<img width="375" height="478" alt="cold-air-pump" src="https://github.com/user-attachments/assets/068981c3-e06c-4b3b-af77-d687b50a6908" />
+<img width="381" height="486" alt="cold-air-pump" src="https://github.com/user-attachments/assets/6e866625-baf9-43cf-ae80-f69d36f8824b" />
 
 
 I live in northern California where the weather is mild year around.  In the summer time, we have some days where the temperature reaches into the 80's and sometimes low 90's F.  It most always cools down to the high 50's or low 60's at night.  If one cools their dwelling at night, that is often enough to avoid having to resort of compressor based air conditioning the next day.  Cooling at night also is good for sleeping - my opinion - as is all of the rest.
