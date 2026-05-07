@@ -1,5 +1,5 @@
 # python-cold-air-pump
-The python and sensor based system pumps cold outdoor air indoors for low energy cooling.
+This python and sensor based system pumps cold outdoor air indoors for low energy cooling.
 
 <img width="381" height="486" alt="cold-air-pump" src="https://github.com/user-attachments/assets/6e866625-baf9-43cf-ae80-f69d36f8824b" />
 
