@@ -44,4 +44,3 @@ This python code loads the following libraries:
 
 Run using:
   python cold-air-pump.py
-<img width="375" height="478" alt="cold-air-pump" src="https://github.com/user-attachments/assets/e1773aa2-6850-45ed-b0b2-8ec0e311178e" />
