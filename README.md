@@ -8,7 +8,14 @@ I live in northern California where the weather is mild year around.  In the sum
 
 In order to cool a dwelling with night air one needs to pump the cool air at night into the dwelling - hence our somewhat silly notion of a "cold pump".  This is a fan that blows cool outdoor air indoors.  The device and code look for a range of outdoor temperatures and pump air into the dwelling when those temperatures are lower than the indoor temperature.
 
-The system uses two temperature sensors, a wifi controlled power switch, a fan, and python code running on most any computer that supports general purpose input and output (GPIO) devices.  An old laptop with a USB GPIO card or a Raspberry PI computer from the last decade both work well.  The python code spec:
+The system uses two temperature sensors, a wifi controlled power switch, a fan, and python code running on most any computer that supports general purpose input and output (GPIO) devices.  An old laptop with a USB GPIO card or a Raspberry PI computer from the last decade both work well.
+
+<img width="508" height="471" alt="cold-air-pump-DS18B20-2" src="https://github.com/user-attachments/assets/2d64c51d-9083-46a5-abb6-6b9ef4cad5cb" />
+
+<br>
+
+The python code spec:
+
 
     1. check indoor temperature > than some lower limit
        (we do not want to freeze things)
