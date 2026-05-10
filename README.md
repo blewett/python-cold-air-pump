@@ -19,9 +19,9 @@ The python code spec:
 
     1. check indoor temperature > than some lower limit
        (we do not want to freeze things)
-    2. check outdoor temperature in within a range
+    2. check outdoor temperature is within a range
     3. check indoor temperature > outdoor temperature
-    4. when 1 2 and 3 conditions are met turn on the window fan
+    4. when 1 2 and 3 conditions are met turn on the fan
 
 The DS18B20 water resistent/waterproof temperature sensors are about $2 US each.  Variants of the SONOFF S31 WiFi controled power switches are in the $10 US range.  Window fans and computers are market rate as we all know.  The python code is free.
 
