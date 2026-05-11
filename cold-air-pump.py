@@ -1,4 +1,5 @@
-"""cold-air-pump.py: Original work Copyright (C) 2026 by Blewett
+"""
+cold-air-pump.py: Original work Copyright (C) 2026 by Blewett
 
 MIT License
 
@@ -24,15 +25,13 @@ The system pumps cold outdoor air indoors.  The system uses two
 temperature sensors, a wifi controlled power switch, a fan, and python
 code running on most any computer that supports general purpose input
 and output (GPIO) devices.  An old laptop with a USB GPIO card or a
-Raspberry PI computer from the last decade both work well.  The python code
-spec:
+Raspberry PI computer from the last decade both work well.
 
 and other words like that.
 
 """
 #
-# Tasmota commands for a FAUF device running the Tasmota operating
-# system
+# Tasmota commands for Fauf device
 #
 # comands seem to be backwards Off turns on, On turns off
 #
