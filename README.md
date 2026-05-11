@@ -10,6 +10,16 @@ In order to cool a dwelling with night air one needs to pump the cool air at nig
 
 The system uses two temperature sensors, a wifi controlled power switch, a fan, and python code running on most any computer that supports general purpose input and output (GPIO) devices.  An old laptop with a USB GPIO card or a Raspberry PI computer from the last decade both work well.
 
+<img width="504" height="512" alt="cold-pump-DS18B20" src="https://github.com/user-attachments/assets/e527f5ce-c131-400e-b465-d4ad48b15b15" />
+
+<br>
+
+<img width="512" height="512" alt="cold-pump-wifi-power-switch" src="https://github.com/user-attachments/assets/40e88be0-f610-469e-a5ec-46dc2fa7769b" />
+
+<br>
+
+The DS18B20 temperature sensors are connected to 3.3 volt power, ground, and GPIO data - I use GPIO pin 4.  There is a 4.7K resistor placed between power and data.  There is a third wire from the DS18B20 that of course goes to ground.  DS18B20 wiring for each device can be stacked next to each other.
+
 <img width="508" height="471" alt="cold-air-pump-DS18B20-2" src="https://github.com/user-attachments/assets/2d64c51d-9083-46a5-abb6-6b9ef4cad5cb" />
 
 <br>
@@ -26,8 +36,6 @@ The python code spec:
 The DS18B20 water resistent/waterproof temperature sensors are about $2 US each.  Variants of the SONOFF S31 WiFi controled power switches are in the $10 US range.  Window fans and computers are market rate as we all know.  The python code is free.
 
 It is common to load a copy of the Tasmota operating system onto the WiFi based power switch.  Some power switches ship with a version of Tasmota or are configured to allow an over the air (OTA) download of it.  The python code here assumes one has a Tasmota configured power switch.  All of this produces a cloud and subscription free system.
-
-The DS18B20 temperature sensors are connected to 3.3 volt power, ground, and GPIO data - I use GPIO pin 4.  There is a 4.7K resistor placed between power and data.  There is a third wire from the DS18B20 that of course goes to ground.  DS18B20 wiring for each device can be stacked next to each other.
 
 For Raspberry PI's one has to add the one wire support.  Do this by adding:
 
