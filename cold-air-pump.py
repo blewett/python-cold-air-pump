@@ -30,13 +30,14 @@ Raspberry PI computer from the last decade both work well.
 and other words like that.
 
 """
+
 #
 # Tasmota commands for Fauf device
 #
 # comands seem to be backwards Off turns on, On turns off
 #
-# http://10.0.0.148/cm?cmnd=Power%20Off
-# http://10.0.0.148/cm?cmnd=Power%20On
+# http://TASMOTA_IP_DEF/cm?cmnd=Power%20Off
+# http://TASMOTA_IP_DEF/cm?cmnd=Power%20On
 #
 #
 
@@ -377,8 +378,8 @@ class ProcessTempSensors:
 
 
 if __name__ == "__main__":
-    TASMOTA_IP = "10.0.0.148"
+    TASMOTA_IP_DEF = your tasmota ip address here
     root = tk.Tk()
-    app = ProcessTempSensors(root, TASMOTA_IP)
+    app = ProcessTempSensors(root, TASMOTA_IP_DEF)
     root.protocol("WM_DELETE_WINDOW", app.on_closing)
     root.mainloop()
